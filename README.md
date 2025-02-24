@@ -35,10 +35,10 @@ This portfolio transforms ideas into functional, scalable web applications with 
 
 ```bash
 # Clone the repository
-git clone https://github.com/suraj-shrivastav/Portfolio
+git clone myportfolio
 
 # Navigate to the directory
-cd Portfolio
+cd myportfolio
 
 # Install dependencies
 npm install
