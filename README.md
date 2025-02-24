@@ -1,16 +1,7 @@
 # ✨ Developer Portfolio
 
 <div align="center">
-  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
-  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" alt="Netlify" />
-</div>
-
-<br />
-
-<div align="center">
-  <img src="./public/preview.png" alt="Portfolio Preview" width="80%" style="border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);" />
+  <img src="./public/preview.png" alt="Portfolio Preview" width="80%" style="border-radius: 20px;" />
 </div>
 
 <br />
@@ -81,24 +72,11 @@ The site features a stunning hero section with:
 ---
 
 <div align="center">
-  <sub>Built with <span class="heartbeat">❤️</span> by Suraj (and a few 
-    <span class="heartbeat">AI overlords</span> 
+  <sub>
+    Built with 
+    <span style="font-weight: bold;">❤️</span> 
+    by Suraj (and a few 
+    <span style="font-weight: bold; color: #3498db;">AI overlords</span> 
     who occasionally let me touch the keyboard😂)
   </sub>
 </div>
-
-<style>
-  .heartbeat {
-    display: inline-block;
-    font-weight: bold;
-    animation: heartbeat 1.5s infinite ease-in-out;
-  }
-
-  @keyframes heartbeat {
-    0% { transform: scale(1); }
-    20% { transform: scale(1.2); }
-    40% { transform: scale(1); }
-    60% { transform: scale(1.2); }
-    80% { transform: scale(1); }
-  }
-</style>
