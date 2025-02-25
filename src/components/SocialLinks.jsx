@@ -14,7 +14,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: 'https://www.linkedin.com/in/suraj-shrivastav/',
-            style: 'rounded-tr-md'
+            style: 'rounded-tr-md bg-gradient-to-r from-emerald-600 to-teal-700'
         },
         {
             id: 2,
@@ -24,7 +24,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: 'https://github.com/suraj-shrivastav/',
-
+            style: 'bg-gradient-to-r from-emerald-600 to-teal-700'
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: 'mailto:surajshrivastav07@gmail.com',
-
+            style: 'bg-gradient-to-r from-emerald-600 to-teal-700'
         },
         {
             id: 4,
@@ -44,7 +44,7 @@ const SocialLinks = () => {
                 </>
             ),
             href: '/Suraj_Shrivastav_Resume.pdf',
-            style: 'rounded-br-md',
+            style: 'rounded-br-md bg-gradient-to-r from-emerald-600 to-teal-700',
             download: true,
         },
     ]
@@ -52,20 +52,16 @@ const SocialLinks = () => {
     return (
         <div className='hidden lg:flex flex-col top-[30%] left-0 fixed'>
             <ul>
-
                 {links.map(({ id, child, href, style, download }) => (
-                    <li key={id} rel="noopener" className={"flex justify-between items-center w-40 h-14 px-4  ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" + style}>
+                    <li key={id} rel="noopener" className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 ${style}`}>
                         <a href={href} className="flex justify-between items-center w-full text-white" download={download} rel="noreferrer">
                             {child}
                         </a>
                     </li>
                 ))}
-
-
             </ul>
         </div>
     )
 }
-
 
 export default SocialLinks;

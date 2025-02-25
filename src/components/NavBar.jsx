@@ -16,12 +16,12 @@ const NavBar = () => {
     return (
         <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-gray-900 to-gray-800 shadow-md'>
             <div>
-                <h1 className='text-5xl font-signature ml-2 text-fuchsia-400'>Suraj</h1>
+                <h1 className='text-5xl font-signature ml-2 text-emerald-400'>Suraj</h1>
             </div>
 
             <ul className='hidden md:flex'>
                 {links.map(({ id, link }) => (
-                    <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-300 hover:text-fuchsia-300 hover:scale-110 duration-300'>
+                    <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-300 hover:text-teal-300 hover:scale-110 duration-300'>
                         <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
                 ))}
@@ -34,7 +34,7 @@ const NavBar = () => {
             {nav && (
                 <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-gray-300'>
                     {links.map(({ id, link }) => (
-                        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl hover:text-fuchsia-300 duration-300'>
+                        <li key={id} className='px-4 cursor-pointer capitalize py-6 text-4xl hover:text-teal-300 duration-300'>
                             <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}> {link} </Link>
                         </li>
                     ))}

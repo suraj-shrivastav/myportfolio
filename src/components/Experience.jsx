@@ -11,32 +11,33 @@ import express from "../assets/express-js.png";
 
 const Experience = () => {
     const techs = [
-        { id: 1, src: html, title: "HTML", style: "shadow-orange-500" },
-        { id: 2, src: css, title: "CSS", style: "shadow-blue-500" },
-        { id: 3, src: javascript, title: "JavaScript", style: "shadow-yellow-500" },
-        { id: 4, src: reactImage, title: "React", style: "shadow-blue-600" },
-        { id: 5, src: tailwind, title: "Tailwind", style: "shadow-sky-400" },
-        { id: 6, src: nodejs, title: "Node.js", style: "shadow-green-500" },
-        { id: 7, src: express, title: "Express.js", style: "shadow-yellow-100" },
-        { id: 8, src: github, title: "GitHub", style: "shadow-gray-400" },
-        { id: 9, src: mongodb, title: "MongoDB", style: "shadow-fuchsia-400" },
+        { id: 1, src: html, title: "HTML" },
+        { id: 2, src: css, title: "CSS" },
+        { id: 3, src: javascript, title: "JavaScript" },
+        { id: 4, src: reactImage, title: "React" },
+        { id: 5, src: tailwind, title: "Tailwind" },
+        { id: 6, src: nodejs, title: "Node.js" },
+        { id: 7, src: express, title: "Express.js" },
+        { id: 8, src: github, title: "GitHub" },
+        { id: 9, src: mongodb, title: "MongoDB" },
     ];
 
     return (
-        <div name="experience" className='bg-gradient-to-b from-gray-900 to-gray-800 w-full h-auto'>
-            <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white '>
-                <div>
-                    <p className='text-4xl font-bold border-b-4 border-fuchsia-600 p-2 inline'>Experience</p>
-                    <p className='py-6'>These are the technologies I've worked with</p>
+        <div name="experience" className="bg-gray-900 w-full h-auto py-16">
+            <div className="max-w-screen-lg mx-auto px-6 flex flex-col justify-center w-full text-white">
+                <div className="text-center mb-12">
+                    <h2 className="text-4xl font-semibold tracking-tight text-gray-100">Experience</h2>
+                    <p className="text-gray-400 mt-2">Technologies I've worked with</p>
                 </div>
-                <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-4 md:px-12 mb-9'>
-                    {techs.map(({ id, src, title, style }) => (
-                        <div
-                            key={id}
-                            className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
+                    {techs.map(({ id, src, title }) => (
+                        <div 
+                            key={id} 
+                            className="group flex flex-col items-center justify-center p-6 rounded-xl bg-gray-800 transition-all duration-300 hover:bg-gray-700 hover:shadow-lg"
                         >
-                            <img src={src} alt={title} className='w-20 mx-auto' />
-                            <p className='mt-4'>{title}</p>
+                            <img src={src} alt={title} className="w-16 h-16 mb-3 transition-transform duration-300 group-hover:scale-110" />
+                            <p className="text-gray-300 text-lg group-hover:text-white transition-colors duration-300">{title}</p>
                         </div>
                     ))}
                 </div>
